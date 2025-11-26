@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "migrate": "psql \"$DATABASE_URL\" -f src/migrations/001_create_users_table.sql"
+    "migrate": "node src/migrate.js"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
@@ -16,4 +16,6 @@
   "devDependencies": {
     "nodemon": "^3.0.3"
   }
+
+  
 }
