@@ -28,4 +28,4 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             mzm1/node-js-app:latest
-            mzm1/node-js-app::01
+            mzm1/node-js-app:01
